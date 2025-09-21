@@ -18,5 +18,20 @@ make
 
 sudo make install
 
+cd /path/to/your/project 
 
+doxygen -g 
+
+nano Doxyfile
+
+Edit the following key settings based on your preference:
+PROJECT_NAME       = "Your Project Name"
+INPUT              = ./src ./include
+RECURSIVE          = YES
+OUTPUT_DIRECTORY   = ./docs
+EXTRACT_ALL        = YES
+HTML = TRUE (if you want html)
+LATEX = TRUE (if you want latex)
+
+doxygen Doxyfile
 
